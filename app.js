@@ -89,6 +89,7 @@ const createSlider = () => {
       slideIndex++;
       changeSlide(slideIndex);
     }, duration);
+    sliders.length = 0;
   }
   else{
     alert('Please type Positive Number');
@@ -134,6 +135,14 @@ document.getElementById("search").addEventListener("keypress", function(event) {
       document.getElementById("search-btn").click();
     }
     
+});
+
+document.getElementById("duration").addEventListener("keypress", function(event) {
+  // event.preventDefault();
+   if (event.key == 'Enter'){
+     document.getElementById("create-slider").click();
+   }
+   
 });
 
 searchBtn.addEventListener('click', function () {
