@@ -131,7 +131,7 @@ const changeSlide = (index) => {
 // var textSearch = 
 document.getElementById("search").addEventListener("keypress", function(event) {
    // event.preventDefault();
-    if (event.key == 'Enter'){
+    if (event.key ==='Enter'){
       document.getElementById("search-btn").click();
     }
     
@@ -139,7 +139,7 @@ document.getElementById("search").addEventListener("keypress", function(event) {
 
 document.getElementById("duration").addEventListener("keypress", function(event) {
   // event.preventDefault();
-   if (event.key == 'Enter'){
+   if (event.key === 'Enter'){
      document.getElementById("create-slider").click();
    }
    
